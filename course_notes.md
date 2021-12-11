@@ -4,7 +4,7 @@
 
 ## References
 
-Start `browser-sync`: `browser-sync start --server --directory --files "*"`
+Start `browser-sync`: `browser-sync start --server --directory --files "**/*"`
 (Updates all file changes directly to the browser page)
 
 Use to ask questions and for reference:
@@ -25,6 +25,12 @@ Types of HTML content: https://html.spec.whatwg.org/multipage/dom.html#kinds-of-
 Bootstrap: www.getbootstrap.com/getting-started
 
 jQuery: www.jquery.com
+
+Do site Mock-Ups: www.balsamiq.com
+
+Import fonts: www.google.com/fonts
+
+Get temporary image placeholders: www.placehold.it
 
 ##CONNECT WITH THE COURSE INSTRUCTOR
 
@@ -240,3 +246,49 @@ Column classes elements (`col-SIZE-SPAN):
 - SIZE: Screen width range identifier (columns will collapse (i.e., stack) below that width,
 unless another rule applies)
 - SPAN: How many columns an element should span (values 1 through 12)
+
+#### Visit with the Client (Lecture 27)
+
+*Google for "web development client questionnaire"!*
+
+- Bring examples of other sites to help client figure out what they want
+- Encourage client to use less information
+- Client should invest in the project
+- Client should have one person as the decider
+- Limit the number of revisions
+- Involve others to help you produce a great product
+
+#### Design Overview (Lecture 28)
+
+Site to do Mock-Ups of the site to be built: www.balsamiq.com
+
+Import fonts: www.google.com/fonts
+
+#### Coding Basics of Navbar Header (Lecture 30)
+
+Consult the documentation of Bootstrap to know with classes and containers to use.
+
+*We can add images via CSS with the `background-img` property.*
+
+#### Coding Nav Menu Buttons (Lecture 31)
+
+Bootstrap comes with a selection of predefined Glyphicons.
+
+We can set a `<a href="tel:410-602-5008>410-602-5008</a>` so it activates the phone when the user is visiting the page
+on a cell phone and clicks on the `a` tag phone number.
+
+#### Fixing Navbar Layout, Text, and Dropdown Menus (Lecture 33)
+
+Adjustable font-size:
+```
+  font-size: 5vw; /* 1vw = 1% of viewport width */
+```
+
+#### Coding the Jumbotron (Lecture 34)
+
+Jumbotron is the Bootstrap term for the big image in the center of the page.
+
+#### Coding Navigation Tiles (Lecture 35)
+
+To get the map with the address of the location, go to Google Maps and go to "Share or embed map".
+Copy the link and the `iframe` (Embed map option). Adjust height and width of the `iframe`.
