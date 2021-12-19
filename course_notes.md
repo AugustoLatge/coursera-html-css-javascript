@@ -33,6 +33,8 @@ Import fonts: www.google.com/fonts
 
 Get temporary image placeholders: www.placehold.it
 
+Ajax Loaders animations (GIFs): www.ajaxloadingimages.net
+
 ## CONNECT WITH THE COURSE INSTRUCTOR
 
 Yaakov Chaikin from Johns Hopkins University
@@ -624,3 +626,108 @@ with the global scope.
   console.log("Hello Coursera!");
 })();
 ```
+
+### DOM Manipulation (Lecture 53)
+
+```
+console.log(document.getElementById("title"));
+console.log(document instanceof HTMLDocument);
+document.getElementById("content").textContent = "Content";
+document.getElementById("content").innerHTML = "<h2>Content</h2>";
+document.querySelector("#title");
+document.querySelector("h1");
+```
+
+### Handling Events (Lecture 54)
+
+```
+// Unobstrusive event binding
+document.querySelector("button").addEventListener("click", sayHello) // `sayHello` is a function;
+document.querySelector("button").onclick = sayHello;
+```
+
+### The `event` Argument (Lecture 55)
+
+Is passed to the function with every event listener. Has many properties that can be exploited.
+
+### HTTP Basics (lecture 56)
+
+HyperText Transfer Protocol
+
+URN: Uniform Resource Name. Example: "HTML/CSS/Javascript/Web Developers/Yaakov/Chaikin"
+URI: Uniform Resource Identifier. Example: "/official_web_site/index.html"
+URL: Uniform Resource Locator. Example: "http:://www.mysite.com/official_web_site/index.html"
+
+#### HTTP Request Structure (GET)
+
+GET /index.html?firstName=Yaakov HTTP/1.1
+
+Method: GET
+URI String: /index.html
+Query String: ?firstName=Yaakov
+HTTP Version: HTTP/1.1
+
+#### HTTP Request Structure (POST)
+
+POST /index.html HTTP/1.1
+HOST: coursera.org
+Accept-Charset: utf-8
+firstName=Yaakov...
+...
+...
+
+Request Headers:
+HOST: coursera.org
+Accept-Charset: utf-8
+
+Message Body:
+firstName=Yaakov...
+...
+...
+
+#### HTTP Response Structure
+
+HTTP/1.1 200 OK
+
+HTTP Version: HTTP/1.1
+Response Status Code: 200
+English phrase describing status code: OK
+
+HTTP/1.1 200 OK
+Date: Tue, 11 Aug 2004 19:00:01 GMT
+Content-Type: text/html
+<html>
+<body>
+<h1>Secret to gaining weight REVEALED!</h1>
+<p>Develop Coursera courses after work at night while eating sweets to keep yourself awake!</p>
+</body>
+</html>
+
+Some Response Status Code
+
+- 200 OK
+- 404 Not Fount
+- 403 Forbidden
+- 500 Internal Server Error
+
+### Ajax Basics
+
+Asynchronous Javascript And XML
+
+### Processing JSON
+
+JavaScript Object Notation
+
+Convert from json string to object:
+`var obj = JSON.parse(jsonString);`
+
+Convert from object to json string:
+`var str = JSON.stringify(obj);`
+
+### Dynamically Loading Home View (Lecture 60)
+
+On the Chrome Developer Tools, at the Network tab, we can select XHR to see just the AJAX requests.
+
+### Dynamically Loading Menu Categories View (Lecture 61)
+
+CORS: Cross-origin Resource Sharing
